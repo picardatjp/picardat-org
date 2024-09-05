@@ -1,18 +1,80 @@
-div.row{
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+body {
+    background-color:lightsteelblue;
+    font-family: sans-serif;
+    box-sizing: border-box;
+    color:black;
+}
+header {
+    gap: 1rem;
+    background-color: aquamarine;
+    width: 100%;;
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
     text-align: center;
 }
-div.col{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
+a {
+    text-decoration: none;
 }
-
-div.block{
-    width: 100px;
+.nav-head {
+    padding: 1rem;
+    text-align: right;
+}
+.nav-head > a {
+    color: darkslategrey;
+}
+.hero {
+    background-color:aliceblue;
+    border-radius: .5rem;
+    text-align: center;
+    padding: 1rem;
+    margin: 1rem;
+}
+.card {
+    background-color: cornflowerblue;
+    border-radius: 1rem;
+    padding: 6rem;
+    margin: 2rem;
+}
+.categories-container {
+    text-align: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+.nav-foot > a {
+    color: black;
+}
+.products-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+footer {
+    text-align: center;
+    color: darkblue;
+    padding: 1rem;
+}
+.card-descriptive {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin: 2rem;
+    background-color: blueviolet;
+    border-radius: 2rem;
+    text-align: center;
+    text-wrap:wrap;
+}
+.card-descriptive > img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+.card-details {
+    background-color: darkmagenta;
+    text-align: left;
+    border-bottom-right-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+    padding: 2rem;
+    color: black;
 }
